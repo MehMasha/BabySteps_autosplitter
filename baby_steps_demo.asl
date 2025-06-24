@@ -1,7 +1,7 @@
 state("BabySteps")
 {
-	float x : "GameAssembly.dll", 0x3ED3CE8, 0xB8, 0x28;
-	float y : "GameAssembly.dll", 0x3ED3CE8, 0xB8, 0x2c;
+    float x : "GameAssembly.dll", 0x3ED3CE8, 0xB8, 0x28;
+    float y : "GameAssembly.dll", 0x3ED3CE8, 0xB8, 0x2c;
     float z : "GameAssembly.dll", 0x3ED3CE8, 0xB8, 0x30;
     bool isStartCutScenePlaying : "GameAssembly.dll", 0x3EB5890, 0xB8, 0x0, 0x390;
     bool isCutScenePlaying : "GameAssembly.dll", 0x3EB5890, 0xB8, 0x0, 0x30D;
@@ -12,7 +12,7 @@ startup
 {
     print("Startup");
 }
- 
+
 start
 {
     current.CampfireSplit = false;
@@ -29,7 +29,7 @@ reset {
             return true;
         }
 }
- 
+
 split
 {
     bool inCampfireArea = current.x > 360 && current.x < 400 &&
