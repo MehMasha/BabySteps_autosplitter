@@ -35,7 +35,7 @@ split
     bool inCampfireArea = current.x > 360 && current.x < 400 &&
                           current.z > 235 && current.z < 260 &&
                           current.y > 145 && current.y < 160;
-	if (!current.CampfireSplit && inCampfireArea && current.isCutScenePlaying) {
+    if (!current.CampfireSplit && inCampfireArea && current.isCutScenePlaying) {
         current.CampfireSplit = true;
         return true;
     }   
