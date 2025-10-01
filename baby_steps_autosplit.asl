@@ -14,7 +14,15 @@ startup
 {
     print("Startup");
 }
- 
+
+isLoading
+{
+    if (current.paused && !current.isStartCutScenePlaying) {
+        return true;
+    }
+    return false;
+}
+
 update
 {
 
@@ -43,19 +51,6 @@ reset {
         }
 }
 
-// Remove for now
-// isLoading
-// {
-//     if (current.paused && !current.isStartCutScenePlaying) {
-//         return true;
-//     }
-//     if (current.isCutScenePlaying && old.inCutsceneTimer == current.inCutsceneTimer && current.inCutsceneTimer > 0)
-//     {
-//         return true;
-//     }
-//     return false;
-// }
- 
 split
 {
     bool inEndArea = current.x > 200 && current.x < 300 &&
