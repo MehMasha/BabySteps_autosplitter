@@ -6,6 +6,8 @@ state("BabySteps")
     bool isStartCutScenePlaying : "GameAssembly.dll", 0x4E38530, 0xB8, 0x0, 0x3F8;
     bool isCutScenePlaying : "GameAssembly.dll", 0x4E38530, 0xB8, 0x0, 0x315;
     float timePlayedCurSave : "GameAssembly.dll", 0x4E38378, 0xB8, 0x0, 0x40;
+    bool paused : "GameAssembly.dll", 0x4E38530, 0xB8, 0x0, 0x90;
+    float inCutsceneTimer : "GameAssembly.dll", 0x4E38530, 0xB8, 0x0, 0x3B8;
 }
 
 startup
@@ -39,6 +41,18 @@ reset {
         {
             return true;
         }
+}
+
+isLoading
+{
+    if (current.paused && !current.isStartCutScenePlaying) {
+        return true;
+    }
+    if (current.isCutScenePlaying && old.inCutsceneTimer == current.inCutsceneTimer && current.inCutsceneTimer > 0)
+    {
+        return true;
+    }
+    return false;
 }
  
 split
