@@ -35,8 +35,8 @@ split
     bool inEndArea = current.x > 200 && current.x < 300 &&
                           current.z > 2800 && current.z < 2900 &&
                           current.y > 900 && current.y < 1000;
-    if (!current.inEndSplit && inEndArea && current.isCutScenePlaying) {
+    if (!current.inEndSplit && inEndArea && current.isCutScenePlaying && current.timePlayedCurSave > 0f) {
         current.inEndSplit = true;
         return true;
-    }   
+    } 
 }
