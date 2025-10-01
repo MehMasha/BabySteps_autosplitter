@@ -13,6 +13,17 @@ startup
     print("Startup");
 }
  
+update
+{
+
+    if(timer.CurrentPhase == TimerPhase.Ended && old.timePlayedCurSave > 0.1 && current.timePlayedCurSave == 0f) {
+        vars.tm = new TimerModel { CurrentState = timer };
+        vars.tm.Reset();
+    }
+
+    return true;
+}
+
 start
 {
     current.inEndSplit = false;
@@ -38,5 +49,5 @@ split
     if (!current.inEndSplit && inEndArea && current.isCutScenePlaying && current.timePlayedCurSave > 0f) {
         current.inEndSplit = true;
         return true;
-    } 
+    }   
 }
