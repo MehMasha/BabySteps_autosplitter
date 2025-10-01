@@ -43,17 +43,18 @@ reset {
         }
 }
 
-isLoading
-{
-    if (current.paused && !current.isStartCutScenePlaying) {
-        return true;
-    }
-    if (current.isCutScenePlaying && old.inCutsceneTimer == current.inCutsceneTimer && current.inCutsceneTimer > 0)
-    {
-        return true;
-    }
-    return false;
-}
+// Remove for now
+// isLoading
+// {
+//     if (current.paused && !current.isStartCutScenePlaying) {
+//         return true;
+//     }
+//     if (current.isCutScenePlaying && old.inCutsceneTimer == current.inCutsceneTimer && current.inCutsceneTimer > 0)
+//     {
+//         return true;
+//     }
+//     return false;
+// }
  
 split
 {
