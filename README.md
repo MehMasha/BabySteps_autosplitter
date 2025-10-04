@@ -1,3 +1,5 @@
+# Has some bugs now
+
 # Baby Steps autosplitter for LiveSplit
 
 Works on [Baby Steps](https://store.steampowered.com/app/1281040/Baby_Steps/) 
