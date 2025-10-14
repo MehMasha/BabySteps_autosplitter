@@ -41,4 +41,4 @@ Timer pause on menu sceen
 If you want your time to pause during menu screens, follow theese steps:
 
 1. Right click on LiveSplit -> "Compare Against" -> "Game Time"
-5. Configure every component of your layout to use Game Time
+2. Configure every component of your layout to use Game Time
