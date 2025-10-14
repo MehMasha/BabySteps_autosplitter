@@ -66,18 +66,6 @@ startup
         { "MooseHut", false },
         { "EndCredits", false }
     };
-
-    if (timer.CurrentTimingMethod == TimingMethod.GameTime)
-        return;
-    var timingMessage = MessageBox.Show (
-        "This game uses Time without Loading parts (Game Time) as the main timing method.\n"+
-        "LiveSplit is currently set to show Real Time (RTA).\n"+
-        "Would you like to set the timing method to Game Time?",
-        "LiveSplit | Baby Steps",
-        MessageBoxButtons.YesNo, MessageBoxIcon.Question
-    );
-    if (timingMessage == DialogResult.Yes)
-        timer.CurrentTimingMethod = TimingMethod.GameTime;
 }
 
 init

@@ -30,10 +30,15 @@ Timer pause on menu sceen
 
 ## How to use it?
 
-1. Right click on LiveSplit -> "Compare Against" -> "Game Time", otherwise pauses won't work
-2. Right click on LiveSplit -> "Edit Layout..." -> "Add" -> "Controls" -> "Scriptable Auto Splitter"
-3. Choose path to baby_steps_autosplit_with_splits.asl file and wait a little bit
-4. Enable\disable splis you want to use during your run
-5. Configure every component of your layout to use Game Time, otherwise pauses won't work
-6. Configure your splits in "Edit Splits..." window
+1. Right click on LiveSplit -> "Edit Layout..." -> "Add" -> "Controls" -> "Scriptable Auto Splitter"
+2. Choose path to baby_steps_autosplit_with_splits.asl file and wait a little bit
+3. Enable\disable splis you want to use during your run in autosplitter settings
+4. Configure your splits in "Edit Splits..." window
 
+
+### Pauses
+
+If you want your time to pause during menu screens, follow theese steps:
+
+1. Right click on LiveSplit -> "Compare Against" -> "Game Time"
+5. Configure every component of your layout to use Game Time
