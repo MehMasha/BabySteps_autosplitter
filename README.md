@@ -16,7 +16,7 @@ Download "uhara9" file from /bin directory and place it in LiveSplit_[version]/C
 
 
 
-## baby_steps_autosplit_with_splits.asl
+## baby_steps_autosplitter.asl
 Category [Any%](https://www.speedrun.com/Baby_Steps?h=any)
 
 Category [Glitchless%](https://www.speedrun.com/Baby_Steps?h=glitchless)
